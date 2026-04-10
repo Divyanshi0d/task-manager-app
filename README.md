@@ -5,44 +5,31 @@ This is a simple full-stack Task Manager application built using Flask (backend)
 
 ---
 
-## Tech Stack
-- Backend: Python (Flask)
-- Frontend: React
-- Database: SQLite
-
----
-
-## Features
-- Add new task
-- Mark task as done
-- Delete task
-
----
-
 ## Architecture
 The application follows a client-server architecture:
 - React frontend sends HTTP requests to Flask APIs
-- Flask processes requests and interacts with the SQLite database
-- Data is returned as JSON and rendered in the UI
+- Flask backend processes requests and interacts with the database
+- SQLite database stores task data
 
 ---
 
 ## Project Structure
-- backend: Contains Flask API and database logic
-- frontend: Contains React UI components
+- backend: Flask API and database logic
+- frontend: React UI components
 
 ---
 
 ## Technical Decisions
-- Flask was chosen for its simplicity and lightweight API development
-- React was used for building a dynamic and responsive UI
-- SQLite was used for easy setup and local storage
+- Flask was chosen for its simplicity and ease of building REST APIs
+- React was used for creating a dynamic and interactive user interface
+- SQLite was selected as a lightweight database for quick setup
+- Axios was used for API communication between frontend and backend
 
 ---
 
 ## Validation & Correctness
-- Input validation ensures empty tasks cannot be added
-- API routes handle errors such as missing or invalid data
+- Input validation ensures that empty tasks cannot be added
+- Backend handles invalid requests with proper error responses
 
 ---
 
@@ -52,20 +39,21 @@ AI tools were used for:
 - Debugging errors
 - Structuring the project
 
-All generated code was manually reviewed and tested.
+All generated code was reviewed and tested manually.
 
 ---
 
 ## Risks / Limitations
-- No authentication system
-- No data persistence across environments
-- Basic UI with limited styling
+- No authentication system (anyone can access the app)
+- Limited UI design (basic interface)
+- No deployment (runs locally only)
 
 ---
 
-## Future Improvements
+## Extension Approach (Future Improvements)
 - Add user authentication (login/signup)
 - Add task priority and due dates
+- Improve UI design
 - Deploy application to cloud
 
 ---
@@ -81,3 +69,7 @@ python app.py
 cd frontend  
 npm install  
 npm start  
+
+---
+
+I focused on building a clean and understandable solution as a beginner while ensuring correct functionality.
